@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "watch": "watchify -v -t babelify js/app.js -o public/javascripts/bundle.js",
+    "watch": "watchify -v -t babelify js/app.js -o public/javascripts/bundle.js | stylus -w public/stylesheets",
     "bundle": "browserify -t babelify js/app.js | uglifyjs --compress -o public/javascripts/bundle.min.js -",
     "start": "node ./bin/www",
     "dev": "NODE_ENV=development node ./bin/www 2>&1 | bunyan",
@@ -18,6 +18,9 @@
     "express": "~4.12.2",
     "jade": "~1.9.2",
     "morgan": "~1.5.1",
-    "serve-favicon": "~2.2.0"
+    "react": "^0.13.3",
+    "react-router": "^0.13.3",
+    "serve-favicon": "~2.2.0",
+    "stylus": "^0.52.0"
   }
 }
