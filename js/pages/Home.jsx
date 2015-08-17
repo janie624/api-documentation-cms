@@ -1,13 +1,35 @@
 import React from 'react';
 import Hero from './Hero.jsx';
+import {Link} from 'react-router';
 
 export default class Home extends React.Component {
+
   render() {
+
     return (
       <div className="glhp-home">
         <Hero/>
-        <div className="white">
+        <br />
+        <br />
+        <div className="container">
+          <div className="row">
+            <div className="col m5 offset-m1 s12">
+              <h5>Start Here</h5>
+              <h6></h6>
+              <ul className="list-unstyled">
+                <li>Learn how to request access:</li>
+                <li><Link to="accessing-dataset">Accessing the Dataset</Link></li>
+              </ul>
+            </div>
+            <div className="col m5 s12">
+              <h5>Ingreenlight Data Services</h5>
+              <ul className="list-unstyled">
+                <li><Link to="docs">REST API</Link></li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <br/>
         <br/>
       </div>
     );

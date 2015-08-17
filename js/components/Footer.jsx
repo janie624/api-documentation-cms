@@ -5,7 +5,7 @@ export default class Footer extends React.Component {
   render() {
 
     return (
-      <footer className="page-footer white">
+      <footer className="page-footer transparent">
         <div className="footer-copyright transparent black-text">
           <div className="container">
             © {new Date().getFullYear()} Greenlight VR
