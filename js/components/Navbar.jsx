@@ -17,12 +17,12 @@ export default class Navbar extends React.Component {
             
             <ul className="right hide-on-med-and-down">
               <li><Link className="white-text" to="accessing-dataset">Accessing the Dataset</Link></li>
-              <li><Link className="white-text" to="docs">REST API</Link></li>
+              <li><Link className="white-text" to="getting-started">REST API</Link></li>
             </ul>
             
             <ul className="side-nav" id="mobile-nav">
               <li><Link className="white-text" to="accessing-dataset">Accessing the Dataset</Link></li>
-              <li><Link className="white-text" to="docs">REST API</Link></li>
+              <li><Link className="white-text" to="getting-started">REST API</Link></li>
             </ul>            
           </div>
         </div>

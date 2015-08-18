@@ -21,14 +21,14 @@ export default class AccessingDataset extends React.Component {
             <thead>
               <tr>
                 <th data-field="product">Product</th>
-                <th data-field="name">Access / License Requirements</th>
+                <th data-field="access-license-requirements">Access / License Requirements</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><Link to="docs">REST API</Link></td>
+                <td><Link to="getting-started">REST API</Link></td>
                 <td>
-                  <ul className="list-unstyled">
+                  <ul>
                     <li>Commercial Use License</li>
                     <li>Non-Commercial Use License</li>
                     <li>Membership in Ingreenlight Venture Program</li>
@@ -46,7 +46,7 @@ export default class AccessingDataset extends React.Component {
 
           <h5 className="card-sub-title">Non-Commercial Use License</h5>
           <p>Access to the Ingreenlight Dataset is available for confirmed non-commercial uses. A limited number of use cases fall under this definition including:</p>
-          <ul>
+          <ul className="list-disc">
             <li>Commercial Use License</li>
             <li>Non-Commercial Use License</li>
             <li>Membership in Ingreenlight Venture Program</li>

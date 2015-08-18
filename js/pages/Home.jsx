@@ -16,15 +16,15 @@ export default class Home extends React.Component {
             <div className="col m5 offset-m1 s12">
               <h5>Start Here</h5>
               <h6></h6>
-              <ul className="list-unstyled">
+              <ul>
                 <li>Learn how to request access:</li>
                 <li><Link to="accessing-dataset">Accessing the Dataset</Link></li>
               </ul>
             </div>
             <div className="col m5 s12">
               <h5>Ingreenlight Data Services</h5>
-              <ul className="list-unstyled">
-                <li><Link to="docs">REST API</Link></li>
+              <ul>
+                <li><Link to="getting-started">REST API</Link></li>
               </ul>
             </div>
           </div>

@@ -10,7 +10,7 @@ nav .brand-logo {
   max-width: 150px;
 }
 .glhp-home-hero {
-  padding: 50px 20%;
+  padding: 60px 20%;
 }
 .card-title,
 .card-sub-title {
@@ -18,4 +18,10 @@ nav .brand-logo {
   border-bottom: 1px solid #eee;
   margin-top: 27px;
   padding-bottom: 12px;
+}
+.list-disc {
+  padding-left: 30px;
+}
+.list-disc li {
+  list-style-type: disc;
 }
