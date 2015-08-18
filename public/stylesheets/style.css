@@ -1,7 +1,10 @@
 body {
   color: #333;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
+}
+.hidden {
+  display: none;
 }
 nav {
   box-shadow: none;
@@ -10,7 +13,7 @@ nav .brand-logo {
   max-width: 150px;
 }
 .glhp-home-hero {
-  padding: 60px 20%;
+  padding: 70px 20%;
 }
 .card-title,
 .card-sub-title {
@@ -24,4 +27,129 @@ nav .brand-logo {
 }
 .list-disc li {
   list-style-type: disc;
+}
+.sidebar {
+  padding-top: 27px;
+}
+span.badge.request-type {
+  font-size: 70%;
+  position: relative;
+  right: 3px;
+  padding: 3px 6px;
+}
+table.condensed td,
+table.condensed th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.auth-action {
+  border-radius: 100%;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 0 2px #fff inset;
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  position: absolute;
+  right: 5px;
+  transition: 0.3s ease-out;
+  transform: scale(1);
+  width: 50px;
+  z-index: 2;
+}
+.auth-action .material-icons {
+  font-size: 24px;
+  left: 12px;
+  position: absolute;
+  transition: 0.3s ease-out;
+  top: 12px;
+}
+.auth-action .material-icons.done {
+  opacity: 0;
+}
+.auth-action .material-icons.key {
+  opacity: 1;
+  transform: rotate(45deg);
+}
+.auth-box {
+  position: relative;
+}
+.auth-box.open .auth-action {
+  transform: scale(0.7);
+}
+.auth-box.open .auth-action .material-icons.done {
+  opacity: 1;
+}
+.auth-box.open .auth-action .material-icons.key {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+.auth-box.open .auth-form {
+  opacity: 1;
+}
+.auth-form {
+  border-radius: 5px;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+.auth-form h5 {
+  margin-top: 0;
+  padding: 10px 15px;
+}
+.auth-form h5 .material-icons {
+  vertical-align: -5px;
+}
+.auth-form .input-field {
+  padding: 10px 15px;
+}
+.search-form .input-field {
+  position: relative;
+}
+.search-form span.badge {
+  left: 15px;
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  top: 12px;
+}
+.search-form input {
+  border: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-radius: 5px;
+  padding-left: 60px;
+  width: calc(100% - 70px);
+}
+.search-form button {
+  border: none;
+  padding: 3px 15px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+pre {
+  outline: 3px solid #eee;
+  padding: 10px;
+}
+pre .string {
+  color: #008000;
+}
+pre .number {
+  color: #ff8c00;
+}
+pre .boolean {
+  color: #00f;
+}
+pre .null {
+  color: #f0f;
+}
+pre .key {
+  color: #f00;
+}
+#result {
+  display: none;
+}
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 85%;
+  }
 }

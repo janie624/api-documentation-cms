@@ -22,7 +22,7 @@ export default class Home extends React.Component {
               </ul>
             </div>
             <div className="col m5 s12">
-              <h5>Ingreenlight Data Services</h5>
+              <h5>GreenlightVR Data Services</h5>
               <ul>
                 <li><Link to="getting-started">REST API</Link></li>
               </ul>

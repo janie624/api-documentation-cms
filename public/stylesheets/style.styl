@@ -1,7 +1,10 @@
 body
   color: #333333
-  font-size: 16px
+  font-size: 15px
   font-weight: 300
+
+.hidden
+  display: none
 
 nav
   box-shadow: none
@@ -10,7 +13,7 @@ nav
     max-width: 150px
 
 .glhp-home-hero
-  padding: 60px 20%
+  padding: 70px 20%
 
 .card-title, .card-sub-title
   border: 0
@@ -19,7 +22,130 @@ nav
   padding-bottom: 12px
 
 .list-disc
-  padding-left: 30px;
+  padding-left: 30px
 
   li
-    list-style-type: disc;
+    list-style-type: disc
+
+.sidebar
+  padding-top: 27px
+
+span.badge
+  &.request-type
+    font-size: 70%
+    position: relative
+    right: 3px
+    padding: 3px 6px
+
+table.condensed
+  td, th
+    padding-top: 5px
+    padding-bottom: 5px
+
+.auth-action
+  border-radius: 100%
+  border: 1px solid #ddd
+  box-shadow: 0 0 0 2px #fff inset
+  cursor: pointer
+  display: inline-block
+  height: 50px
+  position: absolute
+  right: 5px
+  transition: 0.3s ease-out
+  transform: scale(1)
+  width: 50px
+  z-index: 2
+
+  .material-icons
+    font-size: 24px
+    left: 12px
+    position: absolute
+    transition: 0.3s ease-out
+    top: 12px
+    
+    &.done
+      opacity: 0
+    
+    &.key
+      opacity: 1
+      transform: rotate(45deg)
+
+.auth-box
+  position: relative
+
+  &.open
+    .auth-action
+      transform: scale(0.7)
+
+      .material-icons.done
+        opacity: 1
+
+      .material-icons.key
+        opacity: 0
+        transform: rotate(90deg)
+        
+    .auth-form
+      opacity: 1
+  
+.auth-form
+  border-radius: 5px
+  overflow: hidden
+  opacity: 0
+  transition: 0.3s ease-out
+  
+  h5
+    margin-top: 0
+    padding: 10px 15px
+    
+    .material-icons
+      vertical-align: -5px
+
+  .input-field
+    padding: 10px 15px
+
+.search-form
+  .input-field
+    position: relative
+
+  span.badge
+    left: 15px
+    position: absolute
+    display: inline-block
+    width: 30px
+    top: 12px
+
+  input
+    border: 1px solid #eeeeee
+    border-bottom: 1px solid #eeeeee
+    border-radius: 5px
+    padding-left: 60px
+    width: calc(100% - 70px)
+
+  button
+    border: none
+    padding: 3px 15px
+    position: absolute
+    right: 10px
+    top: 10px
+
+pre
+  outline: 3px solid #eeeeee
+  padding: 10px
+
+  .string
+    color: green
+  .number
+    color: darkorange
+  .boolean
+    color: blue
+  .null
+    color: magenta
+  .key
+    color: red
+
+#result
+  display: none
+
+@media only screen and (min-width: 993px)
+  .container
+    width: 85%
